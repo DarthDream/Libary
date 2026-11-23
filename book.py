@@ -34,8 +34,3 @@ class Book:
             print(f"{self.title} returned")
         else:
             print("\nBook is already in the libary")
-
-
-book1 = Book(1, "Clean Code", "Robert Martin", 464)
-book2 = Book(2, "Python Crash Course", "Eric Matthes", 560)
-book3 = Book(3, "Atomis Habits", "James Clear", 320)

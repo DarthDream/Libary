@@ -8,7 +8,7 @@ class Libary:
         self.books.append(book)
 
     def addStudent(self, student):
-        self.students.append(student)
+        self.student.append(student)
 
     def showBooks(self):
         if len(self.books)==0:
@@ -27,14 +27,14 @@ class Libary:
         for student in self.student:
             student.showInfo()
             print("------------------")   
-
-    def searchBook(self, booktID):
-        for b in self.students:
-            if b["id"] == self.books:
+            
+    def searchBook(self, bookID):
+        for b in self.books:
+            if b.id == bookID:
                 return b
 
         return None
-  
+    
     def searchStudent(self, studentID):
         for s in self.students:
             if s["id"] == studentID:

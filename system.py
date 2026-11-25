@@ -1,8 +1,9 @@
-from libary import *
-from student import*
-from book import*
+from libary import Libary
+from student import Student
+from book import Book
 
 library = Libary("My Library")
+
 
 def menu():
     print("""
@@ -13,7 +14,7 @@ def menu():
         4. Search Book
         5. Borrow Book
         6. Return Book
-            0.Exit
+           0. Exit
     """)
 
 
@@ -67,7 +68,6 @@ def app():
                 print("Book borrowed successfully!")
             else:
                 print("Borrow failed!")
-
 
         elif choice == "6":
             studentID = input("Enter Student ID: ")
